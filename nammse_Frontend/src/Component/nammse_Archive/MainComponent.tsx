@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
+import { useRef } from 'react';
 import { css } from '@emotion/react';
 import { nammseArtApi_url } from '../../Url';
+import YouTube, { YouTubeProps } from 'react-youtube';
 
 interface MainComponentProps {
   episode: number;
@@ -15,30 +17,50 @@ interface MainComponentProps {
   }[];
 }
 
-const albumArt = css`
-margin-top: 50%;
-`;
+const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+  event.target.pauseVideo();
+};
+
+const opts: YouTubeProps['opts'] = {
+  height: '400',
+  width: '700',
+  playerVars: {
+    autoplay: 0,
+  },
+};
+
+// const albumArt = css`
+// margin-top: 50%;
+// `;
 
 
 function MainComponent(props: MainComponentProps) {
   const { episode, fulldata } = props;
   let link = '';
+  let checklink = '';
 
   return (
-    //map으로 비효율적으로 처리하는 부분을 수정예정
     <div className='mainComponent' key={'main' + episode} style={{ backgroundImage: 'url("/Image/Untitled.png")', fontFamily: 'Nammse' }}>
       &nbsp;
       <h1 className='epi' key={'ep' + episode} style={{ color: '#bfff58' }}>
         Earlsome Mix Playlist_{episode}
       </h1>
-      <div className='albumArt' css={css`${albumArt};`} key={'al' + episode} style={{ marginBottom: '2%', marginTop: '2%' }}>
-        <img src={nammseArtApi_url + `${episode}`} style={{ width: '50vmin' }} />
-      </div>
+      {
+        fulldata.some((value) => {
+          if (value['Episode'] === episode && value['Track'] > 0) {
+            link = value['Link'];
+            checklink = link.replace('https://www.youtube.com/watch?v=', '');
+          }
+        })
+      }
+
+      <YouTube videoId={checklink} opts={opts} onReady={onPlayerReady} />
 
       {fulldata.map((value, index) => {
         if (value['Episode'] == episode && value['Track'] > 0) {
-          link = value['Link'];
+
           return (
+
             <h3 className='maintext' key={`main${episode}${index}`} style={{ color: '#bfff58' }}>
               <a href={value['Songlink']} style={{ color: '#bfff58', textDecoration: 'none' }}>
                 {value['Track']}

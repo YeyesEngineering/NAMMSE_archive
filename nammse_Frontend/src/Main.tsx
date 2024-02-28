@@ -12,14 +12,13 @@ font-family: 'Nammse';
 `;
 
 const header = css`
-width: 100vw;
 font-size: 3vmin;
 align-items: center;
 `;
 
 const background = css`
 display: grid;
-grid-template-columns: 1fr 3fr 1fr;
+grid-template-columns: 1fr 2fr 1fr;
 justify-items: center;
 align-items: center;
 height: 10vmin;

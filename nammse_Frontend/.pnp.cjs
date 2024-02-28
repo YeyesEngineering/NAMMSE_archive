@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:18.2.0"],\
             ["react-router-dom", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:6.14.0"],\
             ["react-scripts", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:5.0.1"],\
+            ["react-youtube", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:10.1.0"],\
             ["recharts", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:2.7.3"],\
             ["recoil", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:0.7.7"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
@@ -8685,6 +8686,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:18.2.0"],\
             ["react-router-dom", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:6.14.0"],\
             ["react-scripts", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:5.0.1"],\
+            ["react-youtube", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:10.1.0"],\
             ["recharts", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:2.7.3"],\
             ["recoil", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:0.7.7"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
@@ -12304,6 +12306,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["load-script", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/load-script-npm-1.0.0-32a3163a57-8458e3f07b.zip/node_modules/load-script/",\
+          "packageDependencies": [\
+            ["load-script", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["loader-runner", [\
         ["npm:4.3.0", {\
           "packageLocation": "./.yarn/cache/loader-runner-npm-4.3.0-9ca67df372-a90e00dee9.zip/node_modules/loader-runner/",\
@@ -15849,6 +15860,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-youtube", [\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/react-youtube-npm-10.1.0-57507894ba-514678c2a2.zip/node_modules/react-youtube/",\
+          "packageDependencies": [\
+            ["react-youtube", "npm:10.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:10.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-youtube-virtual-23451e12c2/0/cache/react-youtube-npm-10.1.0-57507894ba-514678c2a2.zip/node_modules/react-youtube/",\
+          "packageDependencies": [\
+            ["react-youtube", "virtual:40cf6755bae092716f741c481268ed2341ffb2fa62e2d529bf5c33241ac3b1428e8a2f203d53bcaad5d253b9b06d0f7a71175ed83ecc9fedf0c74b63117afe75#npm:10.1.0"],\
+            ["@types/react", "npm:18.2.14"],\
+            ["fast-deep-equal", "npm:3.1.3"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["youtube-player", "npm:5.5.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["read-cache", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/read-cache-npm-1.0.0-00fa89ed05-cffc728b9e.zip/node_modules/read-cache/",\
@@ -16670,6 +16706,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/signal-exit-npm-4.0.2-e3f0e8ed25-41f5928431.zip/node_modules/signal-exit/",\
           "packageDependencies": [\
             ["signal-exit", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sister", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/cache/sister-npm-3.0.2-bdf9c0b44b-8a1eb9d20a.zip/node_modules/sister/",\
+          "packageDependencies": [\
+            ["sister", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18859,6 +18904,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
           "packageDependencies": [\
             ["yocto-queue", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["youtube-player", [\
+        ["npm:5.5.2", {\
+          "packageLocation": "./.yarn/cache/youtube-player-npm-5.5.2-f66fa65a7d-42693af5d7.zip/node_modules/youtube-player/",\
+          "packageDependencies": [\
+            ["youtube-player", "npm:5.5.2"],\
+            ["debug", "virtual:013be1149d5692a108e582f1e5b5b411a8f47b255d189e4869bd767781ed4f23663599ec155e6771d512911f942b99e05153fb1318bc6bff68cc0ee1ab5e2760#npm:2.6.9"],\
+            ["load-script", "npm:1.0.0"],\
+            ["sister", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

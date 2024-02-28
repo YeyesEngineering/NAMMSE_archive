@@ -26,12 +26,12 @@ export class CrawlingService {
     console.log('updatemaindata');
   }
 
-  // @Cron('0 5 18 * * 5')
-  @Cron('0 12 * * * *')
+  @Cron('0 5 18 * * 5')
+  // @Cron('0 8 * * * *')
   nammse_YoutubeUpdate() {
     this.logger.debug('nammse Update Start!!');
     (async function () {
-      const browser = await puppeteer.launch({ headless: true });
+      const browser = await puppeteer.launch({ headless: false });
       const page = await browser.newPage();
       await page.setViewport({ width: 1080, height: 1024 });
       await page.goto('https://www.youtube.com/@NAMMSE/videos');
@@ -71,8 +71,12 @@ export class CrawlingService {
 
         const nammsePlaylist_split = nammsePlaylist_beforeParse.split('\n');
         const nammsePlaylist_basicParse = nammsePlaylist_split.filter(
-          (element) => element.includes('Playlist_') || element.includes(':'),
+          (element) =>
+            element.includes('Playlist_') ||
+            element.includes('Playlist ') ||
+            element.includes(':'),
         );
+        console.log(nammsePlaylist_basicParse);
         const numberParse = nammsePlaylist_basicParse[0].match(/(\d+)/);
         const episode = numberParse ? numberParse[0] : null;
         const nammselink: string = nammse_linkLists[i];
@@ -111,8 +115,8 @@ export class CrawlingService {
     }).bind(this)();
   }
 
-  // @Cron('0 5 19 * * 5')
-  @Cron('0 12 * * * *')
+  @Cron('0 5 19 * * 5')
+  // @Cron('0 12 * * * *')
   nammse_InstagramUpdate() {
     this.logger.debug('nammse Art Update Start!!');
     (async () => {
