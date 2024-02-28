@@ -7,7 +7,7 @@ http://nammse.site
 
 
 메인 화면
-![main](https://github.com/naulbaragi/nammse_archive/assets/108186606/00373374-9cca-45a3-bab9-f43d28480ec0)
+![main](https://github.com/YeyesEngineering/NAMMSE_archive/assets/161423812/1edf8e6e-79f2-4ad8-87e0-886161674548)
 
 
 Discography 화면
