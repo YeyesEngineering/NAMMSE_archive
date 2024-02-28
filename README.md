@@ -11,7 +11,7 @@ http://nammse.site
 
 
 Discography 화면
-![discography](https://github.com/naulbaragi/nammse_archive/assets/108186606/e1dcbe5b-4c01-4bbc-9660-90f5e980ba98)
+![discography](https://github.com/YeyesEngineering/NAMMSE_archive/assets/161423812/ba04358c-21b9-43f0-9b20-5b83bfc2d9e0)
 
 nammse 서비스 구조도
-![Nammse - Architecture](https://github.com/naulbaragi/nammse_archive/assets/108186606/f90b16b4-767c-4ce4-a070-a2dd7f31dd4b)
+![Nammse - Architecture](https://github.com/YeyesEngineering/NAMMSE_archive/assets/161423812/4be969b3-8d65-48b7-b3f7-17de463f186b))
