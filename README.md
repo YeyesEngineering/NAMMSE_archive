@@ -15,5 +15,3 @@ Discography 화면
 
 nammse 서비스 구조도
 ![Nammse - Architecture](https://github.com/naulbaragi/nammse_archive/assets/108186606/f90b16b4-767c-4ce4-a070-a2dd7f31dd4b)
-
-
